@@ -5,6 +5,11 @@ import { Lacquer, DM_Sans } from "next/font/google";
 import Image from "next/image";
 import Header from "./components/Header/Header";
 import Initial from "./pages/Initial/Initial";
+import ReduxProvider from "./components/Provider/ReduxProvider";
+import { useSelector } from "react-redux";
+import { selectCurrentPage } from "./store/pagesSlice";
+import Projects from "./pages/Projects/Projects";
+import Contact from "./pages/Contact/Contact";
 
 const lacquer = Lacquer({
   weight: "400",
@@ -19,6 +24,8 @@ const dm_sans = DM_Sans({
 export default function Home() {
     const [tab, setTab] = useState(0);
     const [showTab, setShowTab] = useState(0);
+
+    const reduxCurrentPage = useSelector(selectCurrentPage);
 
     const changeTab = (number) => {        
         setTab(number);
@@ -113,7 +120,9 @@ export default function Home() {
             <div className="w-full h-dvh relative overflow-hidden bg-background lg:hidden">
                 <Header />
                 
-                <Initial />
+                {reduxCurrentPage.page === "home" && <Initial />}
+                {reduxCurrentPage.page === "projects" && <Projects />}
+                {reduxCurrentPage.page === "contact" && <Contact />}
             </div>
         </>
     );
