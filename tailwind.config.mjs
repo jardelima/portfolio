@@ -10,6 +10,15 @@ export default {
       colors: {
         background: "#060606",
       },
+      keyframes: {
+        "page-in": {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        }
+      },
+      animation: {
+        "page-in": "page-in 400ms ease-in forwards"
+      }
     },
   },
   plugins: [],

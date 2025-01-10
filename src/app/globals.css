@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.glitch {
+    background-image: url("/avatar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: glitch 5s infinite steps(1);
+}
+
+@keyframes glitch {
+    0%, 100% {
+        background-image: url("/avatar.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    92.5% {
+        background-image: url("/glitch-1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+
+    95% {
+        background-image: url("/glitch-2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0;
+    }
+
+    97.5% {
+        background-image: url("/glitch-3.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+}

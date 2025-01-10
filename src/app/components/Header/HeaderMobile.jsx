@@ -19,7 +19,7 @@ export default function HeaderMobile() {
 
     return (
         <>
-            <header className="p-5 border-b border-b-[rgba(255,255,255,0.1)] flex items-center justify-between xl:hidden">
+            <header className="p-5 border-b border-b-[rgba(255,255,255,0.1)] flex items-center justify-between lg:hidden">
                 <Image 
                     src={"/logo.png"} 
                     alt="logo"
@@ -46,8 +46,8 @@ export default function HeaderMobile() {
             </header>
 
             <div className={`
-                ${menu && "!translate-x-0 opacity-100"}
-                w-full h-[90dvh] bg-[rgb(10,10,10)] p-6 duration-300 translate-x-full opacity-0 flex items-start justify-between flex-col
+                ${menu ? "right-0 opacity-100" : "-right-full opacity-0"}
+                w-full h-[92dvh] bg-[rgb(10,10,10)] p-6 duration-300 fixed top-[83px] z-50 flex items-start justify-between flex-col lg:hidden
             `}>
                 <div>
                     <div className={`${lacquer.className} text-white mb-8 block`}>Projects</div>
