@@ -2,7 +2,7 @@ import ReduxProvider from "./components/Provider/ReduxProvider";
 import "./globals.css";
 
 export const metadata = {
-  title: "Jardel Dev",
+  title: "Dev Jardel",
   description: "Meu portfólio",
 };
 

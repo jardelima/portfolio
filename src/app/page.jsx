@@ -45,20 +45,20 @@ export default function Home() {
                 <div 
                     onClick={() => changeTab(0)}
                     className={`
-                        ${tab === 0 && "!w-[100vw]"} 
-                        ${tab !== 0 && "hover:cursor-pointer"} 
-                        duration-500 w-[3vw] h-dvh bg-background flex items-start justify-center p-4 pb-[75px]
+                        ${tab === 0 && "!w-[100vw] p-[77px] lg:p-[3vw]"} 
+                        ${tab !== 0 && "hover:cursor-pointer p-4"} 
+                        duration-500 w-[3vw] h-dvh bg-background flex items-start justify-center
                     `}
                 >
                     <div 
                         className={`
-                            ${tab === 0 && "!opacity-0 -z-10"} 
-                            -rotate-90 mt-[74px] duration-1000 opacity-100 inline-block`
+                            ${tab === 0 && "!opacity-0 -z-10 absolute pointer-events-none"} 
+                            -rotate-90 mt-[2.8vw] duration-1000 opacity-100 inline-block`
                         }>
                         <h2 
                             className={`
                                 ${lacquer.className} 
-                                text-white
+                                text-white text-[1.2vw]
                             `}
                         >
                                 Home
@@ -73,23 +73,25 @@ export default function Home() {
                     className={`
                         ${tab === 1 && "!w-[100vw]"} 
                         ${tab !== 1 && "hover:cursor-pointer"}
-                        duration-500 w-[3vw] h-dvh bg-background border-l border-l-white flex items-start justify-center p-4
+                        duration-500 w-[3vw] h-dvh bg-background border-l border-l-white flex items-start justify-center
                     `}
                 >
                     <div                         
                         className={`
-                            ${tab === 1 && "!opacity-0 -z-10"} 
-                            -rotate-90 mt-[74px] duration-1000 opacity-100 inline-block`
+                            ${tab === 1 && "!opacity-0 -z-10 absolute pointer-events-none"} 
+                            -rotate-90 mt-[4.8vw] duration-1000 opacity-100 inline-block`
                         }>
                         <h2 
                             className={`
                                 ${lacquer.className} 
-                                text-white
+                                text-white text-[1.2vw]
                             `}
                         >
                             Projects
                         </h2>
                     </div>
+
+                    {showTab === 1 && tab === 1 && <Projects />}
                 </div>
 
                 <div 
@@ -102,13 +104,13 @@ export default function Home() {
                 >
                     <div                         
                         className={`
-                            ${tab === 2 && "!opacity-0 -z-10"} 
-                            -rotate-90 mt-[72px] duration-1000 opacity-100 inline-block`
+                            ${tab === 2 && "!opacity-0 -z-10 absolute pointer-events-none"} 
+                            -rotate-90 mt-[3.7vw] duration-1000 opacity-100 inline-block`
                         }>
                         <h2 
                             className={`
                                 ${lacquer.className} 
-                                text-white
+                                text-white text-[1.2vw]
                             `}
                         >
                             Contact

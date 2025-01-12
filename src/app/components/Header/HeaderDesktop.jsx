@@ -7,12 +7,13 @@ import { FaLinkedin } from "react-icons/fa";
 export default function HeaderDesktop() {
     return (
         <>
-            <header className="w-[5vw] hidden bg-background border-r border-r-white h-dvh py-20 lg:flex items-center justify-between flex-col">
+            <header className="w-[7vw] hidden bg-background border-r border-r-white h-dvh py-[3vw] lg:flex items-center justify-between flex-col">
                 <Image 
                     src={"/logo.png"} 
                     alt="logo"
                     width={50} 
                     height={50} 
+                    className="w-[3vw]"
                 />
 
                 <div>
@@ -20,9 +21,9 @@ export default function HeaderDesktop() {
                         href="https://github.com/jardelima" 
                         target="_blank" 
                         rel="noopener noreferer"
-                        className="mb-4 block"
+                        className="mb-[1vw] block"
                     >
-                        <FaGithub color="white" size={30} />
+                        <FaGithub color="white" className="text-[1.8vw]" />
                     </Link>
 
                     <Link 
@@ -30,7 +31,7 @@ export default function HeaderDesktop() {
                         target="_blank"
                         rel="noopener noreferer"
                     >
-                        <FaLinkedin color="white" size={30} />
+                        <FaLinkedin color="white" className="text-[1.8vw]" />
                     </Link>
                 </div>
             </header>

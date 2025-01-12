@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Nivea",
+        "description": "Projeto Nivea",
+        "stack": [
+            {
+                "tech": "React"
+            },
+            {
+                "tech": "Tailwind"
+            },
+            {
+                "tech": "Next.js"
+            }
+        ],
+        "image": "/project-1.png",
+        "gallery": [
+            {
+                "image": "/project-1-gallery-1.png"
+            },
+            {
+                "image": "/project-1-gallery-1.png"
+            },
+            {
+                "image": "/project-1-gallery-1.png"
+            }
+        ]
+    }
+]
