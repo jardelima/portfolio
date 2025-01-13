@@ -87,7 +87,7 @@ export default function Home() {
                                 text-white text-[1.2vw]
                             `}
                         >
-                            Projects
+                            Projetos
                         </h2>
                     </div>
 
@@ -98,8 +98,8 @@ export default function Home() {
                     onClick={() => changeTab(2)}
                     className={`
                         ${tab === 2 && "!w-[100vw]"} 
-                        ${tab !== 2 && "hover:cursor-pointer"}
-                        duration-500 w-[3vw] h-dvh bg-background border-l border-l-white flex items-start justify-center p-4
+                        ${tab !== 2 && "hover:cursor-pointer flex items-start justify-center p-4"}
+                        duration-500 w-[3vw] h-dvh bg-background border-l border-l-white
                     `}
                 >
                     <div                         
@@ -113,9 +113,11 @@ export default function Home() {
                                 text-white text-[1.2vw]
                             `}
                         >
-                            Contact
+                            Contato
                         </h2>
                     </div>
+
+                    {showTab === 2 && tab === 2 && <Contact />}
                 </div>
             </div>
 

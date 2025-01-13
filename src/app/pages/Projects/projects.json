@@ -1,28 +1,169 @@
 [
     {
-        "name": "Nivea",
-        "description": "Projeto Nivea",
+        "name": "Nivea Sun",
+        "description": "Fui responsável pela análise, levantamento de requisitos, revisão de código e desenvolvimento de uma SPA voltada para a coleta e exibição de dados metereológicos globais, utilizando a latitude e longitude do usuário ou de um local específico. O projeto também envolveu a implementação de um sistema de descontos em produtos com base nas condições climáticas. Realizei integrações com diversas ferramentas, incluindo o Three.js para a visualização 3D do globo terrestre, APIs externas para obter dados metereológicos e lib's de segurança de dados na aplicação dos descontos.",
+        "private": true,
         "stack": [
             {
                 "tech": "React"
             },
             {
-                "tech": "Tailwind"
+                "tech": "Redux"
             },
             {
                 "tech": "Next.js"
+            },
+            {
+                "tech": "Tailwind"
+            },
+            {
+                "tech": "Open Meteo"
             }
         ],
         "image": "/project-1.png",
         "gallery": [
             {
-                "image": "/project-1-gallery-1.png"
+                "image": "/nivea/tela-1.png"
             },
             {
-                "image": "/project-1-gallery-1.png"
+                "image": "/nivea/tela-2.png"
             },
             {
-                "image": "/project-1-gallery-1.png"
+                "image": "/nivea/tela-3.png"
+            },
+            {
+                "image": "/nivea/tela-4.png"
+            },
+            {
+                "image": "/nivea/tela-5.png"
+            },
+            {
+                "image": "/nivea/tela-6.png"
+            }
+        ]
+    },
+    {
+        "name": "Duopass Aplicativo Mobile",
+        "description": "Líder do projeto, responsável pela análise, levantamento de requisitos, revisão de códigos, definição da arquitetura e desenvolvimento da solução. O aplicativo permitia aos usuários visualizar descontos disponíveis, comprar e aplicar cupons gerados por empresas parceiras. O projeto envolveu a integração com o sistema de pagamento da Stripe e com a API interna da empresa, garantindo uma experiência fluida e segura para os usuários.",
+        "link": "https://play.google.com/store/apps/details?id=com.duopass",
+        "stack": [
+            {
+                "tech": "React Native"
+            },
+            {
+                "tech": "Redux"
+            },
+            {
+                "tech": "Stripe"
+            }
+        ],
+        "image": "/project-2.png",
+        "gallery": [
+            {
+                "image": "/duopass/tela-1.png"
+            },
+            {
+                "image": "/duopass/tela-2.png"
+            },
+            {
+                "image": "/duopass/tela-3.png"
+            },
+            {
+                "image": "/duopass/tela-4.png"
+            },
+            {
+                "image": "/duopass/tela-5.png"
+            },
+            {
+                "image": "/duopass/tela-6.png"
+            },
+            {
+                "image": "/duopass/tela-7.png"
+            },
+            {
+                "image": "/duopass/tela-8.png"
+            },
+            {
+                "image": "/duopass/tela-9.png"
+            },
+            {
+                "image": "/duopass/tela-10.png"
+            },
+            {
+                "image": "/duopass/tela-11.png"
+            },
+            {
+                "image": "/duopass/tela-12.png"
+            },
+            {
+                "image": "/duopass/tela-13.png"
+            },
+            {
+                "image": "/duopass/tela-14.png"
+            },
+            {
+                "image": "/duopass/tela-15.png"
+            },
+            {
+                "image": "/duopass/tela-16.png"
+            },
+            {
+                "image": "/duopass/tela-17.png"
+            },
+            {
+                "image": "/duopass/tela-18.png"
+            },
+            {
+                "image": "/duopass/tela-19.png"
+            },
+            {
+                "image": "/duopass/tela-20.png"
+            },
+            {
+                "image": "/duopass/tela-21.png"
+            },
+            {
+                "image": "/duopass/tela-22.png"
+            }
+        ]
+    },
+    {
+        "name": "O Otimista",
+        "description": "Líder do projeto, responsável pela análise, levantamento de requisitos, revisão de códigos, definição da arquitetura e desenvolvimento da solução. O projeto tem como objetivo informar e disseminar notícias com uma abordagem positiva, destacando aspectos construtivos e soluções para problemas sociais, econômicos e culturais. O projeto envolveu o trabalho de roteamento otimizado de páginas para um blog de notícias buscando melhorar a experiência de usuário no site.",
+        "link": "https://ootimista.com.br/",
+        "stack": [
+            {
+                "tech": "Typescript"
+            },
+            {
+                "tech": "React"
+            },
+            {
+                "tech": "Redux"
+            },
+            {
+                "tech": "Next.js"
+            },
+            {
+                "tech": "Tailwind"
+            },
+            {
+                "tech": "Yup"
+            }
+        ],
+        "image": "/project-3.png",
+        "gallery": [
+            {
+                "image": "/otimista/tela-1.png"
+            },
+            {
+                "image": "/otimista/tela-2.png"
+            },
+            {
+                "image": "/otimista/tela-3.png"
+            },
+            {
+                "image": "/otimista/tela-4.png"
             }
         ]
     }
