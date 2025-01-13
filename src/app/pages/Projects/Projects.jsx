@@ -6,6 +6,7 @@ import React, { useState } from "react"
 import { LuProjector } from "react-icons/lu";
 import { IoCloseSharp } from "react-icons/io5";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { TbHandClick } from "react-icons/tb";
 
 import projects from "./projects.json";
 
@@ -38,7 +39,7 @@ export default function Projects() {
         <>
             <div className="w-full lg:w-[85vw] h-[88dvh] lg:h-full animate-page-in p-7 pb-[70px] lg:p-[3vw] flex items-start justify-end flex-col">
                 <div className="flex items-center justify-between w-full">
-                    <h2 className={`${lacquer.className} text-white text-3xl mb-5 lg:text-[4vw] lg:mb-[3vw]`}>Projects</h2>
+                    <h2 className={`${lacquer.className} text-white text-3xl mb-5 lg:text-[4vw] lg:mb-[3vw]`}>projetos</h2>
 
                     <div className="flex items-center justify-center">
                         <div className="swiper-button-prev projects-button-prev after:hidden !relative border border-white !w-[40px] !h-[40px] flex items-center justify-center !left-[unset] !right-[unset] mr-4">
@@ -49,6 +50,8 @@ export default function Projects() {
                         </div>
                     </div>
                 </div>
+
+                <p className={`${dm_sans} text-white flex items-center justify-start mb-5 text-sm lg:hidden`}>Clique nos projetos para ver mais sobre eles <TbHandClick className="ml-2" color="#fff" size={20} /></p>
 
                 <Swiper
                     modules={[Navigation]}
@@ -103,11 +106,29 @@ export default function Projects() {
                 className={`${modal ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
                 w-full h-full fixed left-0 top-0 duration-300 z-50 flex items-center justify-center`}
             >
-                <div onClick={() => setModal(!modal)} className="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.6)] z-[60]"></div>
+                <div 
+                    onClick={() => {
+                        setModal(!modal);
+                        
+                        setTimeout(() => {
+                            setCurrentProject(null);
+                        }, 300);
+                    }} 
+                    className="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.6)] z-[60]"
+                ></div>
 
                 {/* Modal Box */}
                 <div className="w-full max-w-[80vw] max-h-[70dvh] overflow-y-scroll relative bg-gray-100 p-4 lg:p-8 z-[70] 2xl:max-w-[70vw] lg:flex lg:items-start lg:justify-start">
-                    <div onClick={() => setModal(!modal)} className="absolute right-6 top-6 hover:cursor-pointer z-10">
+                    <div 
+                        onClick={() => {
+                            setModal(!modal);
+
+                            setTimeout(() => {
+                                setCurrentProject(null);
+                            }, 300);
+                        }} 
+                        className="absolute right-6 top-6 hover:cursor-pointer z-10"
+                    >
                         <IoCloseSharp className="text-lg lg:text-[1.5vw]" color="#060606" />
                     </div>
 

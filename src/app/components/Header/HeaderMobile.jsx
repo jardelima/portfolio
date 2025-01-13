@@ -81,7 +81,7 @@ export default function HeaderMobile() {
                             text-white w-full mb-4 pb-4 border-b border-b-[rgba(255,255,255,0.1)]
                         `}
                     >
-                        Projects
+                        Projetos
                     </div>
                     <div 
                         onClick={() => handleClickMenu("contact")}
@@ -91,7 +91,7 @@ export default function HeaderMobile() {
                             text-white
                         `}
                     >
-                        Contact
+                        Contato
                     </div>
                 </div>
 

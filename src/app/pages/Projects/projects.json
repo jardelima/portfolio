@@ -1,6 +1,7 @@
 [
     {
         "name": "Nivea Sun",
+        "type": "Web App",
         "description": "Fui responsável pela análise, levantamento de requisitos, revisão de código e desenvolvimento de uma SPA voltada para a coleta e exibição de dados metereológicos globais, utilizando a latitude e longitude do usuário ou de um local específico. O projeto também envolveu a implementação de um sistema de descontos em produtos com base nas condições climáticas. Realizei integrações com diversas ferramentas, incluindo o Three.js para a visualização 3D do globo terrestre, APIs externas para obter dados metereológicos e lib's de segurança de dados na aplicação dos descontos.",
         "private": true,
         "stack": [
@@ -15,6 +16,9 @@
             },
             {
                 "tech": "Tailwind"
+            },
+            {
+                "tech": "Three.js"
             },
             {
                 "tech": "Open Meteo"
@@ -43,7 +47,8 @@
         ]
     },
     {
-        "name": "Duopass Aplicativo Mobile",
+        "name": "Duopass",
+        "type": "Aplicativo Mobile",
         "description": "Líder do projeto, responsável pela análise, levantamento de requisitos, revisão de códigos, definição da arquitetura e desenvolvimento da solução. O aplicativo permitia aos usuários visualizar descontos disponíveis, comprar e aplicar cupons gerados por empresas parceiras. O projeto envolveu a integração com o sistema de pagamento da Stripe e com a API interna da empresa, garantindo uma experiência fluida e segura para os usuários.",
         "link": "https://play.google.com/store/apps/details?id=com.duopass",
         "stack": [
@@ -129,7 +134,8 @@
     },
     {
         "name": "O Otimista",
-        "description": "Líder do projeto, responsável pela análise, levantamento de requisitos, revisão de códigos, definição da arquitetura e desenvolvimento da solução. O projeto tem como objetivo informar e disseminar notícias com uma abordagem positiva, destacando aspectos construtivos e soluções para problemas sociais, econômicos e culturais. O projeto envolveu o trabalho de roteamento otimizado de páginas para um blog de notícias buscando melhorar a experiência de usuário no site.",
+        "type": "Jornal de notícias",
+        "description": "Líder front-end projeto, responsável pela análise, levantamento de requisitos, revisão de códigos, definição da arquitetura e desenvolvimento da solução. O projeto tem como objetivo informar e disseminar notícias com uma abordagem positiva, destacando aspectos construtivos e soluções para problemas sociais, econômicos e culturais. O projeto envolveu o trabalho de roteamento otimizado de páginas para um blog de notícias buscando melhorar a experiência de usuário no site.",
         "link": "https://ootimista.com.br/",
         "stack": [
             {
@@ -164,6 +170,118 @@
             },
             {
                 "image": "/otimista/tela-4.png"
+            }
+        ]
+    },
+    {
+        "name": "Black Mirror - Netflix",
+        "type": "Web App",
+        "description": "Líder front-end do projeto, responsável por desenvolver, levantar requisitos, revisar códigos e definir a arquitetura. O projeto tinha parceria com a Netflix, que estava lançando a 6º temporada de Black Mirror, e seria divulgado nacionalmente por uma empresa terceirizada. O objetivo era conscientizar as pessoas sobre como a internet pode ser maliciosa sem você perceber. Se você aceitasse os termos de uso e privacidade sem ler, o web-app pedia para tirar uma selfie sua e apresentava o trailer do Black Mirror. Porém no meio do trailer, um outro vídeo feito com IA com sua foto era apresentado para você e falava sobre a importância da segurança de dados na internet.",
+        "private": true,
+        "stack": [
+            {
+                "tech": "React"
+            },
+            {
+                "tech": "Next.js"
+            },
+            {
+                "tech": "Styled Components"
+            },
+            {
+                "tech": "React Webcam"
+            },
+            {
+                "tech": "UUID"
+            }
+        ],
+        "image": "/project-5.png",
+        "gallery": [
+            {
+                "image": "/black-mirror/tela-1.png"
+            },
+            {
+                "image": "/black-mirror/tela-2.png"
+            },
+            {
+                "image": "/black-mirror/tela-3.png"
+            },
+            {
+                "image": "/black-mirror/tela-4.png"
+            },
+            {
+                "image": "/black-mirror/tela-5.png"
+            },
+            {
+                "image": "/black-mirror/tela-6.png"
+            },
+            {
+                "image": "/black-mirror/tela-7.png"
+            },
+            {
+                "image": "/black-mirror/tela-8.png"
+            },
+            {
+                "image": "/black-mirror/tela-9.png"
+            },
+            {
+                "image": "/black-mirror/tela-10.png"
+            },
+            {
+                "image": "/black-mirror/tela-11.png"
+            },
+            {
+                "image": "/black-mirror/tela-13.png"
+            },
+            {
+                "image": "/black-mirror/tela-14.png"
+            }
+        ]
+    },
+    {
+        "name": "Pet Select",
+        "type":"Web App",
+        "description": "Fui designado para realizar a manutenção do código do projeto, com o objetivo de corrigir bugs, implementar novas telas e aprimorar a experiência e usabilidade para o usuário. O projeto tinha como finalidade fornecer informações aos clientes sobre os serviços disponíveis, como veterinários, restaurantes, petshops, entre outros, além de apresentar avaliações para os tutores.",
+        "private": true,
+        "stack": [
+            {
+                "tech": "Typescript"
+            },
+            {
+                "tech": "React"
+            },
+            {
+                "tech": "Redux"
+            },
+            {
+                "tech": "Next.js"
+            },
+            {
+                "tech": "Chakra UI"
+            },
+            {
+                "tech": "Styled Components"
+            },
+            {
+                "tech": "Google Maps API"
+            },
+            {
+                "tech": "Axios"
+            },
+            {
+                "tech": "Yup"
+            }
+        ],
+        "image": "/project-4.png",
+        "gallery": [
+            {
+                "image": "/petselect/tela-1.png"
+            },
+            {
+                "image": "/petselect/tela-3.png"
+            },
+            {
+                "image": "/petselect/tela-2.png"
             }
         ]
     }

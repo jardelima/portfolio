@@ -17,8 +17,8 @@ const dm_sans = DM_Sans({
 export default function Contact() {
     return (
         <>
-            <section className="w-full h-[88dvh] lg:max-w-[40vw] lg:h-dvh p-7 lg:p-[3vw] flex items-start justify-end flex-col">
-                <h2 className={`${lacquer.className} text-white text-3xl mb-5 lg:text-[4vw] lg:mb-[3vw]`}>contact me</h2>
+            <section className="w-full h-[88dvh] lg:max-w-[40vw] lg:h-dvh p-7 lg:p-[3vw] flex items-start justify-end flex-col animate-page-in">
+                <h2 className={`${lacquer.className} text-white text-3xl mb-5 lg:text-[4vw] lg:mb-[3vw]`}>contato</h2>
 
                 <p className={`${dm_sans.className} text-white text-base lg:text-[1.2vw] lg:leading-[1.5vw] lg:tracking-[0.05vw] mb-5 lg:mb-[1vw]`}>Para dúvidas, informações ou para discutir uma possível colaboração, estou à disposição. Por favor, me envie um e-mail e responderei o mais breve possível.</p>
 
