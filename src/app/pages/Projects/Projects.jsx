@@ -169,7 +169,7 @@ export default function Projects() {
 
                     {currentProject && (
                         <div>
-                            <h3 className={`${dm_sans.className} font-bold text-xl mb-4 lg:text-[1.5vw] uppercase lg:mb-[1vw]`}>{currentProject.name}</h3>
+                            <h3 className={`${dm_sans.className} font-bold text-xl mb-4 flex items-center lg:text-[1.5vw] uppercase lg:mb-[1vw]`}>{currentProject.name} <span className="ml-2 text-sm lg:text-[0.8vw]">({currentProject.type})</span></h3>
 
                             <div className="mb-4 lg:mb-6">
                                 <h4 className={`${dm_sans.className} font-bold lg:text-[1vw] mb-2 lg:mb-[0.5vw]`}>Descrição do projeto</h4>
